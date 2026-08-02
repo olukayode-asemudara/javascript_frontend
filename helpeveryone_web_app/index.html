@@ -67,46 +67,43 @@
 
   <!--services section-->
   <section class="services page-width">
-    <div>
-      <h2 class="sub-title">Our services</h2>
-      <p>Some of the services incude the following :</p>
+    <div class="service-text">
+      <h2 class="sub-title">Our Services</h2>
+      <p>Some of the services include the following :</p>
     </div>
 
-  <!--normal flex box-->
-    <div class="flex-container">
-      <div class="flex-item-one">
-        <h2 class="sub-text">1-Gurdianship Of Children Without Families</h2>
+    <div class="service-card">
+      <div class="service-content">
+        <h2 class="sub-text">1-Guardianship Of Children Without Families</h2>
         <p>Lorem ipsum dolor sit amet consectetur. Id ullamcorper iaculis laoreet egestas velit phasellus euismod aliquam. Ullamcorper sit amet neque tellus libero sem dui tristique. Ac quam penatibus velit at ipsum aliquet tortor.</p>
         <a href="#" class="offset-btn">About This</a>
       </div>
-      
-      <div class="flex-item-two">
+
+      <div class="service-image">
         <img src="/helpeveryone_web_app/images/guardian.svg" alt="">
       </div>
     </div>
 
-  <!--reverse-flex box-->
-    <div class="flex-container">
-      <div class="flex-item-two">
-        <img src="/helpeveryone_web_app/images/elderly.svg" alt="">
-      </div>
-
-      <div class="flex-item-two">
+    <div class="service-card reverse">
+      <div class="service-content">
         <h2 class="sub-text">2-Helping The Elderly</h2>
         <p>Lorem ipsum dolor sit amet consectetur. Id ullamcorper iaculis laoreet egestas velit phasellus euismod aliquam. Ullamcorper sit amet neque tellus libero sem dui tristique. Ac quam penatibus velit at ipsum aliquet tortor.</p>
         <a href="#" class="offset-btn">About This</a>
       </div>
+
+      <div class="service-image">
+        <img src="/helpeveryone_web_app/images/elderly.svg" alt="">
+      </div>
     </div>
 
-    <!--normal flex box-->
-    <div class="flex-container">
-      <div class="flex-item-one">
+    <div class="service-card">
+      <div class="service-content">
         <h2 class="sub-text">3-Buying Food And Clothes</h2>
         <p>Lorem ipsum dolor sit amet consectetur. Id ullamcorper iaculis laoreet egestas velit phasellus euismod aliquam. Ullamcorper sit amet neque tellus libero sem dui tristique. Ac quam penatibus velit at ipsum aliquet tortor.</p>
         <a href="#" class="offset-btn">About This</a>
       </div>
 
-      <div class="flex-item-one">
+      <div class="service-image">
         <img src="/helpeveryone_web_app/images/shopping.svg" alt="">
       </div>
     </div>
@@ -124,26 +121,79 @@
     </div>
   </section>
 
-  <!--contact-form section-->
-  <section class="contact-form page-width">
+  <!-- Contact Form Section -->
+  <section class="contact-form">
+
     <div class="contact-form-text">
       <h2 class="sub-text">Request A Free Consultation</h2>
-      <p>Complete The Form Below SO That Our Consultants Will Contact You.</p>
+      <p>Complete the form below so that our consultants will contact you.</p>
     </div>
 
-    <form>
-      <div class="contact-form-fields">
-        <div class="input-field">
-          <label>Full name</label>
-          <input type="text">
+    <form action="#">
+
+      <!-- Row 1 -->
+      <div class="form-row">
+
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  placeholder="Enter your full name"
+                  required>
         </div>
 
-        <div class="input-field">
-          <label>Email</label>
-          <input type="email">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required>
         </div>
+
       </div>
+
+      <!-- Row 2 -->
+      <div class="form-row">
+
+        <div class="form-group">
+          <label for="state">State</label>
+
+          <select id="state" name="state" required>
+            <option value="" selected disabled>Select State</option>
+            <option>Lagos</option>
+            <option>Abuja</option>
+            <option>Oyo</option>
+            <option>Rivers</option>
+            <option>Kano</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="industry">Industry</label>
+
+          <select id="industry" name="industry" required>
+            <option value="" selected disabled>Select Industry</option>
+            <option>Technology</option>
+            <option>Finance</option>
+            <option>Healthcare</option>
+            <option>Education</option>
+            <option>Manufacturing</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="offset-btn">
+        Submit Request
+      </button>
+
     </form>
+
   </section>
 
   <!--footer menu-->

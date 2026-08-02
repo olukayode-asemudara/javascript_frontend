@@ -216,41 +216,73 @@ a{
     gap: 1rem;
 }
 
-.services p{
+.services .sub-title{
+    color: var(--main-color);
+}
+
+.service-text p{
     color: var(--black-gray);
     font-size: var(--medium-text);
     width: 70%;
 }
 
-
-.services .sub-title{
-    color: var(--main-color);
-}
-
-.flex-container {
+.service-card{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 5rem;
 }
 
-.flex-item-one {
-    flex-basis: calc(45% - 0.75rem);
+.service-card.reverse{
+    flex-direction: row-reverse;
 }
 
-.flex-item-one .offset-btn{
+.service-content,
+.service-image{
+    flex: 1;
+}
+
+.service-image img{
+    width: 100%;
+    display: block;
+}
+
+.service-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.service-content p{
+    width: 100%;
+    color: var(--black-gray);
+    font-size: var(--medium-text);
+}
+
+.service-content .offset-btn{
     margin-top: 2rem;
+    align-self: flex-start;
 }
 
-.flex-item-two .offset-btn{
-    margin-top: 2rem;
-}
+@media (max-width:768px){
+    .service-card,
+    .service-card.reverse{
+        flex-direction: column;
+        gap: 2rem;
+    }
 
-.flex-item-two {
-    flex-basis: calc(55% - 0.75rem);
-}
+    .service-text p{
+        width: 100%;
+    }
 
-.right-auto{
-    align-items: end;
+    .service-content{
+        align-items: center;
+        text-align: center;
+    }
+
+    .service-content .offset-btn{
+        align-self: center;
+    }
 }
 
 /*call to action section*/
@@ -259,8 +291,7 @@ a{
     margin: var(--center-page);
     height: 30vh;
     background-color: var(--main-color);
-    border: 5px solid white;
-    border-radius: 10px;
+    border: 10px solid white;
     margin-top: 7rem;
     position: relative;
     display: flex;
@@ -277,26 +308,44 @@ a{
     position: absolute;
 }
 
-/*contact form section*/
+/* Contact Form */
+
 .contact-form{
-    margin-top: 7rem;
-    width: 70%;
-    padding: var(--section-padding);
+    width:80%;
+    margin:7rem auto;
+    padding:var(--section-padding);
+
+    border:1px solid var(--main-color);
 }
 
-.contact-form-fields{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.contact-form form{
+    margin-top:3rem;
 }
 
-form{
-    width: 100%;
+.form-row{
+    display:flex;
+    gap:1.5rem;
+    margin-bottom:1.5rem;
 }
 
-input{
-    width: 100%;
-    outline: none;
-    border: none;
-    padding: 10px;
+.form-group{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.contact-form label{
+    margin-bottom:.6rem;
+    font-size:var(--small-text);
+    color:var(--gray);
+}
+
+.contact-form input,
+.contact-form select{
+    width:100%;
+    padding:18px 16px;
+    border:1px solid var(--gray);
+    outline:none;
+    background:transparent;
+    font-size:1rem;
 }
