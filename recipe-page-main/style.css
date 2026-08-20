@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-100: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50:hsl(330, 100%, 98%);
+    --body-font: "Outfit", sans-serif;
+    --recipe-title: "Young Serif", serif;
+    --border-radius: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--Stone-600);
+}
+
+hr{
+    color: var(--Stone-150);
+    border-radius: var(--border-radius);
+    width: 90%;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recipe-item{
+    width: 40%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--White);
+}
+
+.recipe-title{
+    font-family: var(--recipe-title);
+}
+
+.preparation{
+    padding: 20px;
+    background: var(--Rose-50);
+    border-radius: var(--border-radius);
+}
+
+.preparation-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.preparation-title{
+    color: var(--Rose-800);
+    font-size: 20px;
+}
+
+.preparation span{
+    font-weight: 600;
+    color: var(--Stone-100);
+}
+
+.preparation li{
+    margin-left: 15px;
+}
+
+.card{
+    padding: 20px;
+}
+
+.card-title{
+    font-size: 28px;
+    font-family: var(--recipe-title);
+}
+
+.ul-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card li{
+    margin-left: 20px;
+}
+
+.card span{
+    font-weight: 600;
+    color: var(--Stone-100);
+}
