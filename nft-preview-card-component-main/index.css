@@ -26,6 +26,15 @@ body{
     height: 100vh;
 }
 
+hr {
+    height: 0.7px;
+    width: 99%;
+    margin: 0 auto;
+    background-color: var(--blue-800);
+    border: none;
+    opacity: 0.5;
+}
+
 img{
     height: 300px;
     object-fit: cover;
@@ -60,7 +69,7 @@ img{
 .attribution{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .grey-text{
@@ -141,25 +150,12 @@ img{
         font-size: 14px;
     }
 
-    .attribution {
-        padding-top: 5px;
-        border-top: 1px solid var(--blue-800);
-        gap: 10px;
-    }
-
     .attribution p {
         font-size: 14px;
     }
 
-    .avatar-img {
-        height: 35px;
-        width: 35px;
-        border-radius: 50%;
-        border: 1px solid var(--white);
-    }
-
     .icon {
-        height: 16px;
+        height: auto;
         width: 16px;
     }
 }
