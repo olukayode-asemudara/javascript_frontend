@@ -113,3 +113,73 @@ img{
     font-weight: 600;
     color: var(--Stone-100);
 }
+
+/* Mobile Responsive - 430px screen width */
+@media screen and (max-width: 430px) {
+    body {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .recipe-item {
+        width: 95%;
+        margin: 10px auto;
+        padding: 15px;
+        gap: 20px;
+        border-radius: 0;
+    }
+
+    img {
+        border-radius: 0;
+        margin: -15px -15px 0 -15px;
+        width: calc(100% + 30px);
+    }
+
+    .header {
+        gap: 15px;
+    }
+
+    .recipe-title {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .preparation {
+        padding: 15px;
+    }
+
+    .preparation-title {
+        font-size: 18px;
+    }
+
+    .preparation li {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 15px 0;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card li {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .ul-card {
+        gap: 8px;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .preparation span,
+    .card span {
+        font-weight: 600;
+    }
+}
