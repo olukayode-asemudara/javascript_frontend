@@ -129,12 +129,6 @@ img{
         border-radius: 0;
     }
 
-    img {
-        border-radius: 0;
-        margin: -15px -15px 0 -15px;
-        width: calc(100% + 30px);
-    }
-
     .header {
         gap: 15px;
     }
