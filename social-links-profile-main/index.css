@@ -24,6 +24,12 @@ body{
     align-items: center;
 }
 
+img{
+    height: auto;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
 .profile-card{
     width: 40%;
     height: auto;
@@ -33,12 +39,6 @@ body{
     background: var(--grey-800);
     padding: 30px;
     border-radius: 20px;
-}
-
-img{
-    height: auto;
-    object-fit: cover;
-    border-radius: 100%;
 }
 
 .list-items{
@@ -82,4 +82,42 @@ span:hover{
 
 .occupation{
     font-size: 18px;
+}
+
+/* Mobile Responsive - 430px screen width */
+@media screen and (max-width: 430px) {
+    .profile-card {
+        width: 90%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .name {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .location {
+        font-size: 13px;
+    }
+
+    .occupation {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .list-items {
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .socials {
+        padding: 15px 10px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+
+    span {
+        font-size: 13px;
+    }
 }
